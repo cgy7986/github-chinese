@@ -68,7 +68,10 @@ Via（Android）       | 內置管理器
 
 1. 安裝用戶腳本管理器：
     - 推薦：[Tampermonkey][Tampermonkey]
-1. **開啟瀏覽器 “擴展程序” 管理中的 “開發者模式”[^1]**
+1. **基於 Chrome / Chromium 內核瀏覽器：**
+    1. 務必開啟 「擴展程序」 管理中的 **「開發者模式」**[^1]
+    1. 務必開啟 「擴展程序」 管理中腳本管理器擴展的 **「允許運行用戶腳本」**
+    1. 具體可參考 [Tampermonkey 官方指引](https://www.tampermonkey.net/faq.php#Q209)
 1. 選擇安裝源：
     - [GitHub 源【開發版】][main_zh-TW.user.js]
 1. 刷新頁面後，插件即可生效
@@ -108,6 +111,16 @@ Via（Android）       | 內置管理器
 ## 🔄 更新日誌
 
 ### 最新版本
+
+#### v1.9.4.4 (2026-06-20)
+
+1. 相容修復`1.9.2.4`,`1.9.4.4`：
+   - 區分 React GlobalNav 與頁面主體共用的 Primer 彈層，恢復下拉選單即時、完整翻譯。
+
+#### v1.9.4.3 (2026-06-17)
+
+1. 相容修復`1.9.2.3`,`1.9.4.3`：
+   - 收窄 React 搜尋模組忽略範圍，恢復倉庫議題頁和搜尋頁主體區域翻譯。
 
 #### v1.9.3 (2024-08-18)
 
@@ -259,6 +272,7 @@ GitHub 的 ajax 載入方式逐步從 [defunkt/jquery-pjax](https://github.com/d
 1. [Pro Git: 翻譯約定](https://github.com/progit/progit2-zh/blob/master/TRANSLATION_NOTES.asc)
 1. [Git 官方軟件包的簡體中文翻譯](https://github.com/git/git/blob/master/po/zh_CN.po)
 1. [GitHub 詞彙表官方譯本](https://docs.github.com/cn/get-started/quickstart/github-glossary)
+1. **[CSS 選擇器](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference/Selectors) 用於編寫忽略規則**
 
 > [查看詳細貢獻指南](https://github.com/maboloshi/github-chinese/discussions/57)
 
@@ -364,11 +378,11 @@ GitHub 的 ajax 載入方式逐步從 [defunkt/jquery-pjax](https://github.com/d
 
 ## 📈 項目統計
 
-<a href="https://star-history.com/#maboloshi/github-chinese&Timeline">
+<a href="https://star-history.dera.page/#maboloshi/github-chinese&Timeline">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=maboloshi/github-chinese&type=Timeline&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=maboloshi/github-chinese&type=Timeline" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=maboloshi/github-chinese&type=Timeline" width="75%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=maboloshi/github-chinese&type=Timeline&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=maboloshi/github-chinese&type=Timeline" />
+    <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=maboloshi/github-chinese&type=Timeline" width="75%" />
   </picture>
 </a>
 
